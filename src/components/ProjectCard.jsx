@@ -11,6 +11,7 @@ const ProjectCard = ({
     title,
     tags,
     projectLink,
+    productionLink,
     classes
 }) => {
   return (
@@ -28,16 +29,25 @@ const ProjectCard = ({
                     ))}
                 </div>
             </div>
+            <div className="flex flex-col gap-2">
+                <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
+                    <span className="material-symbols-rounded" aria-hidden="true">
+                          <a href={projectLink} className=" inset-0" target="_blank">arrow_outward</a>
+                    </span>
+                    
+                </div>
+                <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
+                    <span className="material-symbols-rounded" aria-hidden="true">
+                          <a href={productionLink} className="inset-0" target="_blank">folder_data</a>
+                    </span>
 
-            <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
-                <span className="material-symbols-rounded" aria-hidden="true">
-                    arrow_outward
-                </span>
+                </div>
             </div>
+
 
         </div>
 
-        <a href={projectLink} className="absolute inset-0 " target="_blank"></a>
+        
     </div>
   )
 }
@@ -46,7 +56,9 @@ ProjectCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
-  projectLink: PropTypes.string
+  projectLink: PropTypes.string,
+  productionLink: PropTypes.string,
+  classes: PropTypes.string
 };
 
 export default ProjectCard
