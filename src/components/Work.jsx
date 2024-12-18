@@ -6,44 +6,44 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/project-3.jpg",
-    title: "SK eCommerce website",
-    tags: ["API", "MVC", "MERN" , "State management"],
-    projectLink: "https://github.com/AlyaaRushdy/sk-ecommerce",
-    productionLink: "https://sk-ecommerce.vercel.app/"
+    imgSrc: "/images/project1.png",
+    title: "ChatGPT v4.5",
+    tags: ["API","AI","Appwrite", "Interactivity",],
+    projectLink: "",
+    productionLink: ""
   },
   {
-    imgSrc: "/images/project2.jpg",
+    imgSrc: "/images/project2.png",
     title: "Space Tourism website",
-    tags: ["System Design", "Three js", "Web Design", "Development"],
+    tags: ["System Design", "Three js", "Web Design", "GSAP", "Interactivity"],
+    projectLink: "https://github.com/Anasmoner2022/space-tourism-website-main",
+    productionLink: ""
+  },
+  {
+    imgSrc: "/images/project-3.jpg",
+    title: "SaaS Landing page",
+    tags: ["Saas", "TypeScript", "Web Design", "Framer Motion"],
     projectLink: "https://github.com",
     productionLink: ""
   },
   {
     imgSrc: "/images/project-3.jpg",
-    title: "Recipe app",
-    tags: ["API", "Development"],
+    title: "E-commerce Dashboard",
+    tags: ["Web-design", "Development", "MERN", "UI/UX",],
     projectLink: "https://github.com",
     productionLink: ""
   },
   {
-    imgSrc: "/images/project-3.jpg",
-    title: "Real state website",
-    tags: ["Web-design", "Development"],
-    projectLink: "https://github.com",
-    productionLink: ""
-  },
-  {
-    imgSrc: "/images/project-3.jpg",
-    title: "eCommerce website",
+    imgSrc: "/images/project5.png",
+    title: "Event Management Platform",
     tags: ["eCommerce", "Development"],
     projectLink: "https://github.com",
     productionLink: ""
   },
   {
-    imgSrc: "/images/project-3.jpg",
-    title: "vCard Personal portfolio",
-    tags: ["Web-design", "Development"],
+    imgSrc: "/images/project6.png",
+    title: "Zentry Clone",
+    tags: ["GSAP", "Animation", "Web Design", "Interactivity"],
     projectLink: "https://github.com",
     productionLink: ""
   },

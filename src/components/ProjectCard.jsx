@@ -32,16 +32,34 @@ const ProjectCard = ({
             <div className="flex flex-col gap-2">
                 <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
                     <span className="material-symbols-rounded" aria-hidden="true">
-                          <a href={projectLink} className=" inset-0" target="_blank">arrow_outward</a>
+                          <a href={projectLink} className=" inset-0" target="_blank">folder_data</a>
                     </span>
                     
                 </div>
-                <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
-                    <span className="material-symbols-rounded" aria-hidden="true">
-                          <a href={productionLink} className="inset-0" target="_blank">folder_data</a>
-                    </span>
+                    
+                  <div
+                      className={`w-11 h-11 rounded-lg grid place-items-center text-zinc-950 shrink-0 ${productionLink
+                              ? "bg-sky-400 cursor-pointer"
+                              : "bg-gray-300 cursor-not-allowed"
+                          }`}
+                      aria-disabled={!productionLink}
+                  >
+                      {productionLink ? (
+                          <a
+                              href={productionLink}
+                              className="inset-0"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-hidden="true"
+                          >
+                              <span className="material-symbols-rounded">arrow_outward</span>
+                          </a>
+                      ) : (
+                          <span className="material-symbols-rounded">arrow_outward</span>
+                      )}
+                  </div>
 
-                </div>
+            
             </div>
 
 
