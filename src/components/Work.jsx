@@ -20,14 +20,14 @@ const works = [
     productionLink: ""
   },
   {
-    imgSrc: "/images/project-3.jpg",
+    imgSrc: "/images/project3.png",
     title: "SaaS Landing page",
     tags: ["Saas", "TypeScript", "Web Design", "Framer Motion"],
     projectLink: "https://github.com",
     productionLink: ""
   },
   {
-    imgSrc: "/images/project-3.jpg",
+    imgSrc: "/images/project4.png",
     title: "E-commerce Dashboard",
     tags: ["Web-design", "Development", "MERN", "UI/UX",],
     projectLink: "https://github.com",
@@ -36,7 +36,7 @@ const works = [
   {
     imgSrc: "/images/project5.png",
     title: "Event Management Platform",
-    tags: ["eCommerce", "Development"],
+    tags: ["Development","BaaS", "Interactivity"],
     projectLink: "https://github.com",
     productionLink: ""
   },
