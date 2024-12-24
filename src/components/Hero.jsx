@@ -32,7 +32,7 @@ const Hero = () => {
           </h2>
 
           <div className="flex flex-col gap-3 sm:flex-row">
-            <ButtonPrimary label='Download CV' icon="download" href="/files/AnasWebDeveloper.pdf" download target="_blank" />
+            <ButtonPrimary label='Download CV' icon="download" href="/files/AnasMoner.pdf" download target="_blank" />
             <ButtonOutline href="#about" label="Scroll down" icon="arrow_downward" />
           </div>
         </div>
