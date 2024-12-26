@@ -29,24 +29,24 @@ const sitemap = [
 const socials = [
     {
         label: 'GitHub',
-        href: 'https://www.github.com/'
+        href: 'https://github.com/Anasmoner2022'
     },
     {
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/'
+        href: 'https://www.linkedin.com/in/anas-moner-606183236/'
     },
-    {
-        label: 'Twitter X',
-        href: 'https://x.com/'
-    },
-    {
-        label: 'Instagram',
-        href: 'https://www.instagram.com/'
-    },
-    {
-        label: 'CodePen',
-        href: 'https://codepen.io/'
-    }
+    // {
+    //     label: 'Twitter X',
+    //     href: 'https://x.com/'
+    // },
+    // {
+    //     label: 'Instagram',
+    //     href: 'https://www.instagram.com/'
+    // },
+    // {
+    //     label: 'CodePen',
+    //     href: 'https://codepen.io/'
+    // }
 ];
 
 

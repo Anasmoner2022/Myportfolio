@@ -12,10 +12,16 @@ const ProjectCard = ({
     tags,
     projectLink,
     productionLink,
-    classes
+    classes,
+    stage,
 }) => {
   return (
     <div className={"relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors " + classes}>
+        <div className="flex flex-row-reverse">   
+        {
+                  stage === "in-progress" && <span className="inset-0 bg-indigo-600 rounded-3xl text-nowrap px-2 animate-pulse m-2"><span className="text-[10px]">In Progress</span></span>
+        }
+        </div>
         <figure className="img-box aspect-square rounded-lg mb-4">
             <img src={imgSrc} alt={title} className='img-cover' loading="lazy" />
         </figure>
@@ -30,12 +36,27 @@ const ProjectCard = ({
                 </div>
             </div>
             <div className="flex flex-col gap-2">
-                <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
-                    <span className="material-symbols-rounded" aria-hidden="true">
-                          <a href={projectLink} className=" inset-0" target="_blank">folder_data</a>
-                    </span>
-                    
-                </div>
+                  <div
+                      className={`w-11 h-11 rounded-lg grid place-items-center text-zinc-950 shrink-0 ${projectLink
+                          ? "bg-sky-400 cursor-pointer"
+                          : "bg-gray-300 cursor-not-allowed"
+                          }`}
+                      aria-disabled={!projectLink}
+                  >
+                      {projectLink ? (
+                          <a
+                              href={projectLink}
+                              className="inset-0"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-hidden="true"
+                          >
+                              <span className="material-symbols-rounded">folder_data</span>
+                          </a>
+                      ) : (
+                          <span className="material-symbols-rounded">folder_data</span>
+                      )}
+                  </div>
                     
                   <div
                       className={`w-11 h-11 rounded-lg grid place-items-center text-zinc-950 shrink-0 ${productionLink
@@ -76,7 +97,8 @@ ProjectCard.propTypes = {
   tags: PropTypes.array.isRequired,
   projectLink: PropTypes.string,
   productionLink: PropTypes.string,
-  classes: PropTypes.string
+  classes: PropTypes.string,
+  stage: PropTypes.string
 };
 
 export default ProjectCard
