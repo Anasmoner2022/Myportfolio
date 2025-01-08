@@ -5,13 +5,13 @@
 import ProjectCard from "./ProjectCard";
 
 const works = [
-  // {
-  //   imgSrc: "/images/project1.png",
-  //   title: "ChatGPT v4.5",
-  //   tags: ["API","AI","Appwrite", "Interactivity",],
-  //   projectLink: "",
-  //   productionLink: ""
-  // },
+  {
+    imgSrc: "/images/project1.png",
+    title: "ChatGPT v4.5",
+    tags: ["API","AI","Appwrite", "Interactivity",],
+    projectLink: "",
+    productionLink: ""
+  },
   {
     imgSrc: "/images/project2.png",
     title: "Space Tourism website",
@@ -34,7 +34,7 @@ const works = [
     title: "E-commerce Dashboard",
     tags: ["Web-design", "Development", "MERN", "UI/UX",],
     projectLink: "https://github.com",
-    productionLink: "",
+    productionLink: "https://www.linkedin.com/feed/update/urn:li:activity:7279487859269455872/",
     stage: "in-progress"
 
   },
@@ -66,8 +66,8 @@ const Work = () => {
     <section id="work" className="section">
         <div className="container">
 
-        <h2 className="headline-2 mb-8 reveal-up">My Portfolio Highlights</h2>
-            <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
+        <h2 className="headline-2 reveal-up mb-8">My Portfolio Highlights</h2>
+            <div className="grid grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))] gap-x-4 gap-y-5">
                 {works.map(({imgSrc,title,tags,projectLink,productionLink, stage}, key)=>(
                     <ProjectCard 
                      key={key} 
