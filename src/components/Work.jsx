@@ -9,8 +9,9 @@ const works = [
     imgSrc: "/images/project1.png",
     title: "ChatGPT v4.5",
     tags: ["API","AI","Appwrite", "Interactivity",],
-    projectLink: "",
-    productionLink: ""
+    projectLink: "https://github.com/Anasmoner2022/ChatGptV4.5",
+    productionLink: "",
+    stage: "in-progress"
   },
   {
     imgSrc: "/images/project2.png",
@@ -27,21 +28,20 @@ const works = [
     projectLink: "https://github.com",
     productionLink: "",
     stage: "in-progress"
-
   },
   {
     imgSrc: "/images/project4.png",
     title: "E-commerce Dashboard",
-    tags: ["Web-design", "Development", "MERN", "UI/UX",],
+    tags: ["Web-design", "Development", "MERN", "UI/UX","TeamWork", "E-commerce"],
     projectLink: "https://github.com",
     productionLink: "https://www.linkedin.com/feed/update/urn:li:activity:7279487859269455872/",
-    stage: "in-progress"
+    stage: "completed"
 
   },
   {
     imgSrc: "/images/project5.png",
     title: "Event Management Platform",
-    tags: ["Development","BaaS", "Interactivity"],
+    tags: ["Development","BaaS", "Interactivity","TeamWork"],
     projectLink: "https://github.com/web-hawks/evento",
     productionLink: "",
     stage: "in-progress"
