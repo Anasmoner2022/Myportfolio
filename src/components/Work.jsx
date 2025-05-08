@@ -36,7 +36,6 @@ const works = [
     projectLink: "https://github.com",
     productionLink: "https://www.linkedin.com/feed/update/urn:li:activity:7279487859269455872/",
     stage: "completed"
-
   },
   {
     imgSrc: "/images/project5.png",
@@ -54,7 +53,14 @@ const works = [
     projectLink: "",
     productionLink: "",
     stage: "in-progress"
-
+  },
+  {
+    imgSrc: "/images/project4.png",
+    title: "Sudoku Solver",
+    tags: ["Go lang","BackTracking Algorithm", "Problem Solving"],
+    projectLink: "https://github.com/Anasmoner2022/Soduko-Solver-Go-lang",
+    productionLink: "https://source-code-docker.vercel.app/",
+    stage: "completed"
   },
 ];
 
