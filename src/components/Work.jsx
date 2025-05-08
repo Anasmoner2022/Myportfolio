@@ -55,7 +55,7 @@ const works = [
     stage: "in-progress"
   },
   {
-    imgSrc: "/images/project4.png",
+    imgSrc: "/images/project7.png",
     title: "Sudoku Solver",
     tags: ["Go lang","BackTracking Algorithm", "Problem Solving"],
     projectLink: "https://github.com/Anasmoner2022/Soduko-Solver-Go-lang",
